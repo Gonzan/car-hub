@@ -1,11 +1,11 @@
-'use client'
-import { useState } from "react"
-import { SearchManufacturer } from "@/components"
+'use client';
+import { useState } from "react";
+import { SearchManufacturer } from "@/components";
 
 const SearchBar = () => {
-  const [manufacturer, setManufacturer] = useState('')
+  const [manufacturer, setManufacturer] = useState('');
 
-  const handleSubmit = () => {}
+  const handleSubmit = () => {};
   
   return (
     <form className="searchbar" onSubmit={handleSubmit}>
@@ -16,7 +16,7 @@ const SearchBar = () => {
         />
       </div>
     </form>
-  )
-}
+  );
+};
 
-export default SearchBar
+export default SearchBar;

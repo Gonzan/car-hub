@@ -1,7 +1,6 @@
-
-import Link from "next/link"
-import Image from "next/image"
-import CustomButton from "@/components/CustomButton"
+import Link from "next/link";
+import Image from "next/image";
+import CustomButton from "@/components/CustomButton";
 
 const NavBar = () => (
   <header className="w-full absolute z-10">
@@ -24,6 +23,6 @@ const NavBar = () => (
       />
     </nav>
   </header>
-)
+);
 
-export default NavBar
+export default NavBar;

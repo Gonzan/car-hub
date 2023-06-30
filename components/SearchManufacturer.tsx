@@ -1,18 +1,18 @@
-'use client'
+'use client';
 import Image from "next/image";
-import { SearchManufacturerProps } from "@/types"
+import { SearchManufacturerProps } from "@/types";
 import { Combobox, Transition } from "@headlessui/react";
 import { useState, Fragment } from "react";
 import { manufacturers } from "@/constants";
 
 const SearchManufacturer = ({manufacturer, setManufacturer}:SearchManufacturerProps) => {
-  const [query,setQuery] = useState('')
+  const [query,setQuery] = useState('');
 
   const filteredManufacturers = query === '' ? manufacturers :
     manufacturers.filter((item => item.toLocaleLowerCase()
       .trim()
       .includes(query.toLocaleLowerCase().trim())
-  ))
+  ));
   
   return(
     <div className="search-manufacturer">
@@ -61,7 +61,7 @@ const SearchManufacturer = ({manufacturer, setManufacturer}:SearchManufacturerPr
         </div>
       </Combobox>
     </div>
-  )
-}
+  );
+};
 
-export default SearchManufacturer
+export default SearchManufacturer;

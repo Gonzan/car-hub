@@ -27,6 +27,6 @@ const Hero = () => (
       <div className="hero__image-overlay" />
     </div>
   </section>
-)
+);
 
-export default Hero
+export default Hero;

@@ -10,6 +10,6 @@ const CustomButton = ({title, styles, handleClick, btnType}: CustomButtonProps) 
   >
     <span className={`flex-1`}>{title}</span>
   </button>
-)
+);
 
-export default CustomButton
+export default CustomButton;

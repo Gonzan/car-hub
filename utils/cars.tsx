@@ -1,6 +1,6 @@
 import { fetchUrl } from "../constants";
 
-export async function getAllCars() {
+export async function getAllCars(): Promise<{data: any[], error:boolean|undefined}> {
   const options = {
     method: 'GET',
     headers: {

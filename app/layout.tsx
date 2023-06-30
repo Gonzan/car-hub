@@ -1,12 +1,12 @@
-import './globals.css'
-import{ NavBar } from '@/components'
-import{ Footer } from '@/components'
+import './globals.css';
+import{ NavBar } from '@/components';
+import{ Footer } from '@/components';
 
 
 export const metadata = {
   title: 'Next Cars',
   description: '',
-}
+};
 
 export default function RootLayout({
   children,
@@ -21,5 +21,5 @@ export default function RootLayout({
         <Footer/>
       </body>
     </html>
-  )
-}
+  );
+};
